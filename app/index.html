@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StatAtlas — Every country, every number that matters</title>
+<meta name="description" content="StatAtlas ranks and compares 115 countries across 18 real indicators — population, GDP, life expectancy and more — from World Bank data, 1960 to 2024.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">◍</span>
+      <span class="brand-name">StatAtlas</span>
+      <span class="brand-tag">The atlas of nations</span>
+    </a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#/" data-nav="home">Atlas</a>
+      <a href="#/rankings" data-nav="rankings">Rankings</a>
+      <a href="#/compare" data-nav="compare">Head-to-Head</a>
+      <a href="#/surprises" data-nav="surprises">Surprises</a>
+      <a href="#/sources" data-nav="sources">Sources</a>
+    </nav>
+    <div class="searchbox">
+      <label for="country-search" class="visually-hidden">Search a country</label>
+      <input id="country-search" type="search" placeholder="Search 115 countries…" autocomplete="off">
+      <ul id="search-results" class="search-results" hidden></ul>
+    </div>
+  </div>
+  <div class="ticker" id="ticker" aria-label="Headline figures"></div>
+</header>
+<main id="view"></main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>StatAtlas</strong> — every figure is real, sourced and dated. Data: World Bank World Development Indicators, downloaded 26 November 2026; each figure shows its year. Nothing here is fetched from the network: the whole atlas runs from its own files.</p>
+    <p class="footer-links"><a href="#/sources">Sources &amp; method</a> · <a href="#/rankings">Rankings</a> · <a href="#/compare">Head-to-Head</a> · <a href="#/surprises">Surprises</a></p>
+    <p class="footer-note">Built as an original work. Country names follow the World Bank list. Figures are the latest available per indicator, 2015–2024.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
